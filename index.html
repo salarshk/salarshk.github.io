@@ -8,12 +8,10 @@
             position: absolute;
             top: 20px;
             right: 20px;
-            width: auto; /* Adjust as needed */
-            height: auto; /* Adjust as needed */
+            width: auto;
+            height: auto;
             max-width: 300px; /* Adjust based on your preference */
             max-height: 300px; /* Adjust based on your preference */
-
-            overflow: hidden;
             border: 3px solid #ddd; /* Optional border */
         }
 
@@ -22,6 +20,11 @@
             height: 100%;
             object-fit: cover;
         }
+
+        /* Prevent text from going behind the image */
+        .content {
+            margin-right: 320px; /* Adds space so text doesn't overlap with image */
+        }
     </style>
 </head>  
 <body>
@@ -29,40 +32,33 @@
     <div class="profile-container">
         <img src="assets/profile.jpg" alt="Salar Shakib">
     </div>
-    <h1>Hello, I'm Salar Shakib!</h1>
-    <p>Welcome to my personal website hosted on GitHub Pages.</p>
 
-    <!-- News Section -->
-    <section id="news">
-        <h2>News</h2>
-        <ul>
-            <li><strong>Dec 2024:</strong> <a href="https://ieeexplore.ieee.org/abstract/document/10804123" target="_blank">E-MAC: Enhanced In-SRAM MAC Accuracy via Digital-to-Time Modulation</a>, published in <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6570653" target="_blank">IEEE JXCDC</a>, explores a novel in-memory computing approach for deep learning accelerators.</li>
-            <li><strong>July 2024:</strong> Our paper, <a href="https://openreview.net/pdf?id=rver7enVfY" target="_blank">An Analytical Approach to Enhancing DNN Efficiency and Accuracy Using Approximate Multiplication</a>, was presented at the <a href="https://want-ai-hpc.github.io/icml2024/about/" target="_blank">WANT Workshop at ICML 2024</a>.</li>
-            <li><strong>July 2024:</strong> Our paper titled <a href="https://ieeexplore.ieee.org/document/10682772" target="_blank">Harnessing Approximate Computing for Machine Learning</a> was successfully accepted and presented at ISVLS 2024.</li>
-            <li><strong>July 2024:</strong> <a href="https://dl.acm.org/doi/abs/10.1145/3649329.3661852" target="_blank">OPTIMA</a>, was presented at the DAC 2024 conference.</li>
-            <li><strong>March 2024:</strong>Survey paper, co-authored with fellow ESRs from <a href="https://projects.tuni.fi/apropos/" target="_blank">APROPOS</a>, has been successfully published in the Journal of Systems Architecture. Title: Adaptive Approximate Computing in Edge AI and IoT Applications: A Review.</li>
-            <li><strong>Feb 2024:</strong> Our paper, <a href="https://ieeexplore.ieee.org/abstract/document/10457067" target="_blank">ACE-CNN: Approximate Carry Disregard Multipliers for Energy-Efficient CNN-Based Image Classification</a>, published in <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8919" target="_blank">IEEE TCAS-I</a>, introduces SCDM8 multipliers, achieving energy savings with minimal accuracy loss. It studies their impact on CNNs, highlighting the efficiency-accuracy trade-offs.</li>
-            <li><strong>July 2022:</strong> Our paper, <a href="https://ieeexplore.ieee.org/abstract/document/9911996" target="_blank">Energy-aware Adaptive Approximate Computing for Deep Learning Applications</a>, published in <a href="https://www.ieee-isvlsi.org/ISVLSI_2022_Website/index.html" target="_blank">IEEE ISVLSI 2022</a>, explores adaptive approximation to optimize deep learning efficiency.
-            <li><strong>March 2023:</strong> Check out our new pre-print on "The Role of Pre-training Data in Transfer Learning." A shorter version is accepted at the ICLR Workshop on Multimodal Representation Learning.</li>
-            <li><strong>January 2023:</strong> Our REPAIR paper is accepted at ICLR 2023. This follows up on our work on permutation invariance of neural networks.</li>
-            <li><strong>January 2023:</strong> As part of my internship at UW, we introduced DataComp, a new large-scale multimodal benchmark to measure the effect of data curation strategies on downstream model performance. Stay tuned!</li>
-            <li><strong>January 2023:</strong> I am invited to give a talk about our recent work on permutation invariances at the MIT-IBM Watson AI Lab, IBM Research on February 2nd. Drop me an email if you'd like to attend!</li>
-            <li><strong>August 2022:</strong> One paper is accepted at MICCAI 2022 Applications of Medical AI (AMAI) Workshop.</li>
-            <li><strong>June 2022:</strong> Two papers are accepted at ICML 2022 Hardware Aware Efficient Training and Pre-training: Perspectives, Pitfalls, and Paths Forward workshops.</li>
-            <li><strong>June 2022:</strong> I organized the 2nd Efficient Machine Learning Workshop, this time in Vienna.</li>
-            <li><strong>February 2022:</strong> I will give a talk about our recent work on Permutation Invariance at the EPFL Virtual Symposium: Loss Landscape of Neural Networks.</li>
-            <li><strong>January 2022:</strong> One paper is accepted at ICLR 2022 (score: 7.0, top 5%).</li>
-        </ul>
-    </section>
-    <!-- Languages Section -->
-    <section id="languages">
-        <h2>Languages</h2>
-        <ul>
-            <li> English</li>
-            <li> German </li>
-            <li> Persian (Native)</li>
-        </ul>
-    </section>
-    
+    <!-- Content Section (Prevents Overlapping with Image) -->
+    <div class="content">
+        <h1>Hello, I'm Salar Shakib!</h1>
+        <p>Welcome to my personal website hosted on GitHub Pages.</p>
+
+        <!-- News Section -->
+        <section id="news">
+            <h2>News</h2>
+            <ul>
+                <li><strong>Dec 2024:</strong> <a href="https://ieeexplore.ieee.org/abstract/document/10804123" target="_blank">E-MAC: Enhanced In-SRAM MAC Accuracy via Digital-to-Time Modulation</a>, published in <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6570653" target="_blank">IEEE JXCDC</a>, explores a novel in-memory computing approach for deep learning accelerators.</li>
+                <li><strong>July 2024:</strong> Our paper, <a href="https://openreview.net/pdf?id=rver7enVfY" target="_blank">An Analytical Approach to Enhancing DNN Efficiency and Accuracy Using Approximate Multiplication</a>, was presented at the <a href="https://want-ai-hpc.github.io/icml2024/about/" target="_blank">WANT Workshop at ICML 2024</a>.</li>
+                <li><strong>July 2024:</strong> Our paper titled <a href="https://ieeexplore.ieee.org/document/10682772" target="_blank">Harnessing Approximate Computing for Machine Learning</a> was successfully accepted and presented at ISVLS 2024.</li>
+                <li><strong>July 2024:</strong> <a href="https://dl.acm.org/doi/abs/10.1145/3649329.3661852" target="_blank">OPTIMA</a>, was presented at the DAC 2024 conference.</li>
+            </ul>
+        </section>
+
+        <!-- Languages Section -->
+        <section id="languages">
+            <h2>Languages</h2>
+            <ul>
+                <li> English</li>
+                <li> German </li>
+                <li> Persian (Native)</li>
+            </ul>
+        </section>
+    </div>
+
 </body>
 </html>

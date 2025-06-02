@@ -148,52 +148,6 @@
     </tr>
 
 
-    <tr onmouseout="r2r_stop()" onmouseover="r2r_start()">
-      <td style="padding:16px;width:20%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='r2r_image'><video  width=100% muted autoplay loop>
-          <source src="images/r2r.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div>
-          <img src='images/r2r.jpg' width=100%>
-        </div>
-        <script type="text/javascript">
-          function r2r_start() {
-            document.getElementById('r2r_image').style.opacity = "1";
-          }
-
-          function r2r_stop() {
-            document.getElementById('r2r_image').style.opacity = "0";
-          }
-          r2r_stop()
-        </script>
-      </td>
-      <td style="padding:8px;width:80%;vertical-align:middle">
-        <a href="https://relight-to-reconstruct.github.io/">
-          <span class="papertitle">Generative Multiview Relighting for
-3D Reconstruction under Extreme Illumination Variation</span>
-        </a>
-        <br>
-        <a href="https://hadizayer.github.io/">Hadi Alzayer</a>,
-        <a href="https://henzler.github.io/">Philipp Henzler</a>,
-				<strong>Jonathan T. Barron</strong>, 
-        <a href="https://jbhuang0604.github.io/">Jia-Bin Huang</a>,
-        <a href="https://pratulsrinivasan.github.io/">Pratul P. Srinivasan</a>, 
-        <a href="https://dorverbin.github.io/">Dor Verbin</a>
-        <br>
-        <em>CVPR</em>, 2025 &nbsp <font color=#FF8080><strong>(Highlight)</strong></font>
-        <br>
-        <a href="https://relight-to-reconstruct.github.io/">project page</a>
-        /
-        <a href="https://arxiv.org/abs/2412.15211">arXiv</a>
-        <p></p>
-        <p>
-				Images taken under extreme illumination variation can be made consistent with diffusion, and this enables high-quality 3D reconstruction.
-        </p>
-      </td>
-    </tr>
-
-
     <tr onmouseout="ever_stop()" onmouseover="ever_start()">
       <td style="padding:16px;width:20%;vertical-align:middle">
         <div class="one">
@@ -281,7 +235,49 @@ Approximate Multiplication</span>
     </tr>
 	
 
+ <tr onmouseout="r2r_stop()" onmouseover="r2r_start()">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='r2r_image'><video  width=100% muted autoplay loop>
+          <source src="images/icnn.png" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/icnn.png' width=100%>
+        </div>
+        <script type="text/javascript">
+          function r2r_start() {
+            document.getElementById('r2r_image').style.opacity = "1";
+          }
 
+          function r2r_stop() {
+            document.getElementById('r2r_image').style.opacity = "0";
+          }
+          r2r_stop()
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="https://relight-to-reconstruct.github.io/">
+          <span class="papertitle">Harnessing Approximate Computing for Machine Learning</span>
+        </a>
+        <br>
+      <strong>Salar Shakibhamedan</strong>,
+      <a href="https://aminaminifar.github.io/info/">Amin Aminifar</a>,
+      <a href="https://www.lukevassallo.com/">Luke Vassallo</a>,
+      <a href="https://nima.eclectx.org/">Nima TaheriNejad</a>
+        <br>
+        <em>ISVLSI</em>, 2024
+        <br>
+        <a href="https://arxiv.org/abs/2412.15211">Paper</a>
+        <p></p>
+        <p>
+				This paper presents a comprehensive overview of Approximate Computing (AxC) techniques in Machine Learning, with a focus on energy-efficient Deep Learning. It explores four main strategies—quantization, approximate multiplication, in-memory computing, and input-dependent approximation—and discusses their impact on reducing energy consumption while maintaining reliable performance. The work highlights both software-based implementations for general-purpose systems and hardware-integrated solutions for custom SoC/SiP designs, aiming to support robust and efficient AI acceleration in mobile and edge applications.
+        </p>
+      </td>
+    </tr>
+
+
+
+		  
 
   <tr onmouseout="eclipse_stop()" onmouseover="eclipse_start()">
     <td style="padding:16px;width:20%;vertical-align:middle">

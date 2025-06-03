@@ -142,9 +142,9 @@ span.highlight {
 }
 
 .emoji-flag {
-  height: 1em;
+  height: 2em;
   vertical-align: middle;
-  margin-right: 4px;
-  border-radius: 2px;
+  margin-right: 6px;
+  border-radius: 4px;
 }
 

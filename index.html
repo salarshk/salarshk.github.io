@@ -52,7 +52,47 @@
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 		  
+    <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='smerf_image'><video  width=100% muted autoplay loop>
+          <source src="images/IBTrain.png" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/IBTrain.png' width=100%>
+        </div>
+        <script type="text/javascript">
+          function smerf_start() {
+            document.getElementById('smerf_image').style.opacity = "1";
+          }
 
+          function smerf_stop() {
+            document.getElementById('smerf_image').style.opacity = "0";
+          }
+          smerf_stop()
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+          <span class="papertitle">An Analytical Approach to Enhancing DNN Efficiency and Accuracy Using
+Approximate Multiplication</span>
+        </a>
+        <br>
+      <strong>Salar Shakibhamedan</strong>,
+      <a href="https://scholar.google.com/citations?user=TnTONnkAAAAJ&hl=en">Anice Jahanjoo</a>,
+      <a href="https://aminaminifar.github.io/info/">Amin Aminifar</a>,
+      <a href="https://scholar.google.com/citations?hl=en&user=X-NAQiEAAAAJ">Nima Amirafshar</a>, <br>
+      <a href="https://nima.eclectx.org/">Nima TaheriNejad</a>,
+      <a href="https://jantsch.se/AxelJantsch/HomePage/index.html">Axel Jantsch</a>
+        <br>
+        <a href="https://want-ai-hpc.github.io/icml2024/about/">ICML Workshop on Advancing Neural Network Training: Computational Efficiency, Scalability, and Resource Optimization, 2024</a>
+        <br>
+        <a href="https://openreview.net/pdf?id=rver7enVfY">Paper</a>
+        <p></p>
+        <p>
+        Optimization and approximation techniques are commonly used to improve the efficiency of DNNs, but they often come at the cost of reduced performance. This paper introduces a novel approach that achieves both efficiency and performance improvement simultaneously through approximation. By leveraging Information Bottleneck theory, the work provides the first formal connection between efficiency techniques and information-theoretic analysis, using the information plane to study how approximation affects the learning behavior of DNNs.
+        </p>
+      </td>
+    </tr>
 
     <tr onmouseout="ever_stop()" onmouseover="ever_start()">
       <td style="padding:16px;width:20%;vertical-align:middle">

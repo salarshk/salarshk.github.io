@@ -148,3 +148,7 @@ span.highlight {
   border-radius: 0px;
 }
 
+.label {
+  font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
+}
+

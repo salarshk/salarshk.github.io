@@ -61,8 +61,8 @@ summary::-webkit-details-marker{display:none}
 summary::after{content:' +';padding-left:5px}
 details[open] summary::after{content:' −'}
 .publication-actions details>p{flex-basis:100%;font-size:14px;line-height:1.85;color:#525b4d;margin-top:0}
-.publication-figure{background:#fff;border:1px solid #dedfd5;padding:12px;align-self:center;display:flex;flex-direction:column;justify-content:center;gap:8px;min-height:150px}
-.publication-figure img{width:100%;max-height:180px;object-fit:contain}
+.publication-figure{background:var(--paper);border:1px solid #dedfd5;padding:12px;align-self:center;display:flex;flex-direction:column;justify-content:center;gap:8px;min-height:150px}
+.publication-figure img{width:100%;max-height:180px;mix-blend-mode:multiply;object-fit:contain}
 .publication-figure.multiple img{max-height:95px}
 .publication-figure:hover{border-color:#6c7d60}
 .section-space{margin-top:88px}

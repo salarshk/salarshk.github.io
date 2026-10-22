@@ -1,4 +1,5 @@
 const publications = [...document.querySelectorAll('.publication')];
+const archivePublications = [...document.querySelectorAll('#publication-archive .publication')];
 const filters = [...document.querySelectorAll('.filter-button')];
 const count = document.querySelector('#publication-count');
 
@@ -11,7 +12,7 @@ filters.forEach((button) => {
       item.classList.toggle('active', active);
       item.setAttribute('aria-pressed', String(active));
     });
-    publications.forEach((publication) => {
+    archivePublications.forEach((publication) => {
       const matches = filter === 'all' || publication.dataset.topics.split(' ').includes(filter);
       publication.hidden = !matches;
       if (matches) visible += 1;

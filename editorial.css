@@ -90,7 +90,9 @@ details[open] summary::after{content:' −'}
 .timeline article::before{content:'';position:absolute;left:131px;top:35px;width:10px;height:10px;border-radius:50%;background:var(--green);box-shadow:0 0 0 5px var(--paper)}
 .timeline-date{font-family:var(--serif);color:var(--green);font-size:17px}
 .timeline h3{font-size:26px;margin:4px 0 7px}
-.timeline article>div:last-child>p:last-child{font-size:14px;color:var(--muted);max-width:900px}
+.experience-points{margin:13px 0 0;padding:0;list-style:none;display:grid;grid-template-columns:1fr 1fr;column-gap:48px;row-gap:8px;max-width:980px}
+.experience-points li{position:relative;padding-left:18px;font-size:14px;line-height:1.65;color:var(--muted)}
+.experience-points li::before{content:'—';position:absolute;left:0;color:var(--green)}
 .case-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;padding-top:28px}
 .case-grid article{display:flex;flex-direction:column;min-height:350px;border:1px solid var(--line);padding:30px;background:#fbfaf5}
 .case-index{font-size:10px;text-transform:uppercase;letter-spacing:1.5px;color:var(--green)}
@@ -222,6 +224,7 @@ h2{font-size:33px;letter-spacing:-1px}
 .about h2{font-size:31px}
 .publication-tools{align-items:flex-start;flex-direction:column;padding-top:17px}.publication-resources{width:100%;justify-content:space-between}
 .timeline::before{left:6px}.timeline article{grid-template-columns:1fr;gap:3px;padding:24px 0 24px 28px}.timeline article::before{left:1px;top:31px}.timeline-date{font-size:13px}
+.experience-points{grid-template-columns:1fr;row-gap:7px;margin-top:12px}
 .case-grid{padding-top:20px}.case-grid article{padding:24px}.case-grid h3{font-size:25px}
 .research .section-heading{display:block}
 .research .section-heading .eyebrow{display:block;margin-top:13px;font-size:9px}
